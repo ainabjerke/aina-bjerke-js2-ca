@@ -14,13 +14,14 @@ export function createHTML(products) {
   }
 
   products.forEach(function (product) {
+    
     let cssClass = "fa-regular";
-
     //check trugh the favorites array
     //does the item id exisit in the favorite array
     const doesObjectExist = favorites.find(function (fav) {
       console.log(fav);
       return parseInt(fav.id) === product.id;
+
     });
 
     console.log(doesObjectExist);

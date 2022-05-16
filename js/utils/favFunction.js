@@ -7,3 +7,7 @@ export function getExistingFavs() {
     return JSON.parse(favs);
   }
 }
+
+export function clearStorage(key) {
+  localStorage.removeItem(key);
+}
