@@ -1,6 +1,9 @@
-import { getExistingFavs } from "../utils/favFunction.js";
+import { getExistingFavs, clearStorage } from "../utils/storage.js";
 import favMessage from "../constants/FavMessage.js";
-import { clearStorage } from "../utils/favFunction.js";
+// import { clearStorage } from "../utils/favFunction.js";
+import createMenu from "../components/createNavbar.js";
+
+createMenu();
 
 const favorites = getExistingFavs();
 
@@ -9,7 +12,7 @@ const productContainer = document.querySelector(".product-container");
 if (favorites.length === 0) {
   productContainer.innerHTML = favMessage.emptyFavList;
 }
-console.log(productContainer);
+// console.log(productContainer);
 
 favorites.forEach((favorite) => {
   productContainer.innerHTML += `

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="JavaScript 2 Course Assignment" />
+    <title>Edit | JS2 CA</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="menu-container"></nav>
+    <section class="section">
+      <div class="container">
+        <div class="column">
+          <h1>Add Article</h1>
+          <div class="message-container"></div>
+          <form class="form-add-product">
+            <div>
+              <label for="title" class="label">Title</label>
+              <input id="title" class="input" type="text" />
+            </div>
+
+            <div>
+              <label for="author" class="label">Author</label>
+              <input id="author" class="input" type="text" />
+            </div>
+
+            <div>
+              <div>
+                <label for="summary" class="label">Summary *</label>
+                <textarea id="summary"></textarea>
+                <span>*must be more than 5 characters</span>
+              </div>
+            </div>
+            <div>
+              <p>
+                <button type="submit" class="button">Add</button>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>Edit Articles</h2>
+        <ul class="collection"></ul>
+      </div>
+    </section>
+    <script src="js/components/edit.js" type="module"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Product</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,=" />
+  </head>
+  <body>
+    <div class="menu-container"></div>
+    <div class="container">
+      <!-- <div class="menu-container"></div> -->
+<!-- <h1>Edit Product</h1>
+
+      <div class="loading">Loading product...</div>
+
+      <form class="edit-form">
+        <div class="message-container"></div>
+
+        <div>
+          <label for="title">Title</label>
+          <input id="title" />
+        </div>
+        <div>
+          <label for="author">Author</label>
+          <input id="author" />
+        </div>
+        <div>
+          <label for="summary">Summary</label>
+          <textarea id="summary"></textarea>
+        </div>
+
+        <input id="id" type="hidden" />
+
+        <div>
+          <button id="update">Update</button>
+          <button id="delete">delete</button>
+        </div>
+      </form>
+    </div>
+    <section class="section edit-articles">
+      <div class="container">
+        <h2 class="is-size-2">Edit Articles</h2>
+        <ul class="collection"></ul>
+      </div>
+    </section>
+    <script src="js/components/edit.js" type="module"></script>
+  </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Product</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,=" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu-container"></div>
+      <h1>Edit Product</h1>
+
+      <div class="loading">Loading product...</div>
+
+      <form class="edit-form">
+        <div class="message-container"></div>
+
+        <div>
+          <label for="name">Name</label>
+          <input id="name" />
+        </div>
+        <div>
+          <label for="price">Price</label>
+          <input id="price" />
+        </div>
+        <div>
+          <label for="description">Description</label>
+          <textarea id="description"></textarea>
+        </div>
+
+        <input id="id" type="hidden" />
+
+        <div>
+          <button id="update">Update</button>
+        </div>
+      </form>
+    </div>
+    <script src="js/edit.js" type="module"></script>
+  </body>
+</html> -->
